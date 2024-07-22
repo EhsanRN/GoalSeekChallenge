@@ -5,12 +5,6 @@ namespace GoalSeek.API.Helpers
 {
     public class GoalSeekHelper
     {
-/*        public const decimal DefaultAccuracyLevel = 0.0000001m;
-
-        public const bool DefaultResultRoundOff = true;
-
-        public readonly Func<decimal, decimal> func;
-*/        
         public static CalculationResult Calculate(GoalSeekRequestDto input, ILogger logger)
         {
             var newCalculation = new Calculation(input.FormulaComputedValue, logger);
